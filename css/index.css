@@ -19,15 +19,7 @@ body{
 }
 .textContent h1{
     font-size: 4rem;
-    overflow: hidden;
     margin: 0;
-    border-right: 0.15em solid #FFFFFF;
-    white-space: nowrap;
-    animation: typing 6s steps(40, end) infinite;
-}
-@keyframes typing{
-    from{width: 0;}
-    to{width: 83%;}
 }
 .textContent h3{
     font-size: 2em;
@@ -80,7 +72,7 @@ h3 span{
     display: none;
 }
 
-@media screen and (max-width: 1065px) and (min-width: 767px){
+@media screen and (max-width: 1189px) and (min-width: 767px){
     .homeSection{height: 770px;}
     .textContentContainer{display: flex;place-content: center; margin-top: 0px}
     .textContent{margin-top: 0px;margin-left: 0px;text-align: center;}
@@ -91,7 +83,7 @@ h3 span{
 }
 @media screen and (max-width: 768px) and (min-width: 647px){
     .homeSection{padding-top: 70px;height: 770px;}
-    .textContentContainer{display: flex;place-content: center;}
+    .textContentContainer{display: flex;place-content: center; margin-top: -70px;}
     .textContent{margin-top: 135px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 480px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
     .textContent h1{font-size: 4rem;}
@@ -106,7 +98,7 @@ h3 span{
 }
 @media screen and (max-width: 646px) and (min-width: 511px){
     .homeSection{padding-top: 70px;height: 770px;}
-    .textContentContainer{display: flex;place-content: center; margin-top: 40px;}
+    .textContentContainer{display: flex;place-content: center; margin-top: -40px;}
     .textContent{margin-top: 95px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 480px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
     .textContent h1{font-size: 3rem;}
@@ -157,7 +149,7 @@ h3 span{
     .textContentContainer{display: flex;place-content: center;}
     .textContent{margin-top: 125px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 300px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
-    .textContent h1{font-size: 2.4rem;}
+    .textContent h1{font-size: 2rem;}
     .textContent h3{font-size: 1.2rem;}
     .textContent p{font-size: 0.7rem;}
     .readBtn{display: none;}
