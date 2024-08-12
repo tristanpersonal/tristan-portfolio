@@ -1,9 +1,9 @@
 .serviceSection{
-    padding: 100px 0px 100px 0px;
+    padding: 50px 0px 45px 0px;
     height: max-content;
 }
 .skillHeadtext2{
-    font-size: 3rem;
+    font-size: 2.5em;
     text-align: center;
     color: #06070A;
     text-transform: uppercase;
@@ -15,19 +15,19 @@
     justify-content: space-evenly;
     align-items: center;
     flex-wrap: wrap;
-    gap: 30px;
+    gap: 20px;
     margin-top: 50px;
 }
 .myService{
     padding: 30px 20px;
-    width: 400px;
+    width: 350px;
     height: 380px;
     transition: transform 0.5s;
 }
 .myService:hover{
     background-color: #8b8b8b;
     color: #FFFFFF;
-    transform: scale(1.1);
+    transform: scale(1.03);
 }
 
 .skillDivOne{
@@ -49,22 +49,19 @@
     line-height: 1.7rem;
 }
 .skillIcon{
-    width: 100px;
+    width: 70px;
     text-align: center;
 }
 @media screen and (max-width: 532px) and (min-width: 426px){
-    .skillHeadtext2{font-size: 2rem;}
-    .myService{padding: 30px 20px;width: 300px;height: 380px;}
-    .skillDivOne h1{font-size: 1.6rem;}
+    .myService{padding: 30px 20px;width: 350px;height: max-content;}
+    .skillDivOne h1{font-size: 1.5em;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .skillHeadtext2{font-size: 2rem;}
     .serviceContainer{row-gap: 40px;}
-    .myService{padding: 30px 20px;width: 260px;height: max-content;}
-    .skillDivOne h1{font-size: 1.6rem;}
+    .myService{padding: 30px 20px;width: 320px;height: max-content;}
+    .skillDivOne h1{font-size: 1.5em;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .skillHeadtext2{font-size: 2rem;}
-    .myService{padding: 30px 20px;width: 260px;height: 540px;}
-    .skillDivOne h1{font-size: 1.6rem;}
+    .myService{padding: 30px 20px;width: 260px;height: max-content;}
+    .skillDivOne h1{font-size: 1.5em;}
 }
