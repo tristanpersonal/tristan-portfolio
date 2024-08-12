@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/index.css">
+    <link rel="stylesheet" href="/css/header&footer.css">
+    <link rel="stylesheet" href="/css/education.css">
+    <link rel="stylesheet" href="/css/skills.css">
+    <link rel="stylesheet" href="/css/services.css">
+    <link rel="stylesheet" href="/css/projects.css">
+    <link rel="stylesheet" href="/css/about.css">
+    <link rel="stylesheet" href="/css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<style>
+    html{scroll-behavior: smooth;}
+    body{font-family: "Poppins", sans-serif;}
+    section{scroll-margin-top: 85px;}
+    .myService{scroll-margin-top: 410px;}
+    .myProject:nth-child(1), .myProject:nth-child(2), .myProject:nth-child(3), .myProject:nth-child(5){scroll-margin-top: 450px;}
+    .myProject:nth-child(4){scroll-margin-top: 520px;}
+</style>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id='myNav'>
+            <div class="logoSection">
+                <p><a href="#homeTab"><img src="/img/tsenLogo.png" alt="logo-pic"></a></p>
+            </div>
+            <div class="menuSection">
+                <input type='checkbox' id='responsiveMenu'><label></label>
+                <ul>
+                    <li><a href='#homeTab'>Home</a></li>
+                    <li><a href='#educTab'>Education</a></li>
+                    <li><a href='#skillTab'>Skills</a></li>
+                    <li><a href='#projectTab'>Projects</a></li>
+                </ul>
+            </div>
+          </nav>
+    </header>
+    <!-- Main -->
+    <main>
+        <!-- Home -->
+        <section class="homeSection" id="homeTab">
+            <div class="textContentContainer">
+                <div class="textContent">
+                    <h1>Hi, I am Tristan</h1>
+                    <h3>Aspiring <span>Front-End Developer</span></h3>
+                    <p>Passionate about crafting and engaging website interfaces</p>
+                    <a href="#aboutTab">
+                        <button class="readBtn">Read more</button>
+                    </a>
+                </div>
+            </div>
+            <img src="/img/myPicture.png" alt="picture" class="myPic">
+            <div class="socmedContainer">
+                <p>My social media</p> 
+                <div class="socmedIcon">
+                    <a href="#aboutTab"><img src="/img/info.png" alt="picture" class="aboutIcon"></a>
+                    <a href="https://www.facebook.com/t369s48e5n.001?mibextid=ZbWKwL" target="_blank"><img src="/img/facebook.png" alt="picture"></a>
+                    <a href="https://www.instagram.com/tristanstephennido?igsh=MXE0aXV6YTNzbjRpZg==" target="_blank"><img src="/img/instagram.png" alt="picture"></a>
+                </div>
+            </div>
+        </section>
+        <!-- Education -->
+        <section class="educationSection" id="educTab">
+            <h1 class="educHeadtext">Educational Attainment</h1>
+            <div class="educationInfo">
+                <div class="educationContainer educationHidden">
+                    <p><img src="/img/garpCap2.png" alt="gradCap"></p>
+                    <h1 class="level">Primary</h1>
+                    <div class="information">
+                        <p>Bangad Elementary School</p>
+                        <p>Salutatorian</p>
+                        <p>2013-2014</p>
+                    </div>
+                </div>
+                <div class="educationContainer educationHidden">
+                    <p><img src="/img/garpCap2.png" alt="gradCap"></p>
+                    <h1 class="level">Junior High</h1>
+                    <div class="information">
+                        <p>Janosa National High School</p>
+                        <p>With Honors</p>
+                        <p>2017-2018</p>
+                    </div>
+                </div>
+                <div class="educationContainer educationHidden">
+                    <p><img src="/img/garpCap2.png" alt="gradCap"></p>
+                    <h1 class="level">Senior High</h1>
+                    <div class="information">
+                        <p>Janosa National High School</p>
+                        <p>With High Honors</p>
+                        <p>2019-2020</p>
+                    </div>
+                </div>
+                <div class="educationContainer educationHidden">
+                    <p><img src="/img/garpCap2.png" alt="gradCap"></p>
+                    <h1 class="level">Tertiary</h1>
+                    <div class="information">
+                        <p>University of Rizal System</p>
+                        <p>Bachelor of Science in Computer Engineering</p>
+                        <p>2023-2024</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Skills -->
+        <section class="skillsSection" id="skillTab">
+            <h1 class="skillHeadtext">My Skills</h1>
+            <div class="skillInformation">
+                <div class="skillPic">
+                    <img src="/img/ojtPic.png" alt="picture">
+                </div>
+                <div class="skillBar">
+                    <div class="skillPercent">
+                        <li>
+                            <h3>html</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="html percentHidden"></span>
+                                    <span class="percentage">60%</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>css</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="css percentHidden"></span>
+                                    <span class="percentage">50%</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>javascript</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="javascript percentHidden"></span>
+                                    <span class="percentage">45%</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>wordpress</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="wordpress percentHidden"></span>
+                                    <span class="percentage">25%</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>figma</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="figma percentHidden"></span>
+                                    <span class="percentage">45%</span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>python</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="python percentHidden"></span>
+                                    <span class="percentage">35%</span>
+                                </span>
+                            </div>
+                        </li>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Services -->
+        <section class="serviceSection">
+            <h1 class="skillHeadtext2">What I can do</h1>
+            <div class="serviceContainer">
+                <div class="myService serviceHidden" id="webdesignFrame">
+                    <div class="skillDivOne">
+                        <img src="/img/wedesign.png" alt="Web design picture" class="skillIcon">
+                        <h1>Web Design</h1>
+                    </div>
+                    <div class="skillDivTwo">
+                        <p class="skillInfo">I design websites using HTML, CSS, and JavaScript, and I use Figma for wireframing to visualize the final design. My skills include adding interactive elements to enhance user engagement. I am willing to adapt to the latest web design trends and technologies to create modern and efficient websites. My goal is excellence.</p>
+                    </div>
+                </div>
+                <div class="myService serviceHidden" id="responsiveFrame">
+                    <div class="skillDivOne">
+                        <img src="/img/responsive.png" alt="Responsive web picture" class="skillIcon">
+                        <h1>Responsive Website</h1>
+                    </div>
+                    <div class="skillDivTwo">
+                        <p class="skillInfo">I have experience creating responsive and user-friendly web interfaces using CSS, ensuring compatibility across devices and browsers. This involves implementing media queries, flexible grids, and other techniques to optimize layout. I am dedicated to delivering websites that provide seamless navigation and accessibility for users.</p>
+                    </div>
+                </div>
+                <div class="myService serviceHidden" id="codingFrame">
+                    <div class="skillDivOne">
+                        <img src="/img/frontend.png" alt="Front-end picture" class="skillIcon">
+                        <h1>Front-End coding</h1>
+                    </div>
+                    <div class="skillDivTwo">
+                        <p class="skillInfo">Regarding front-end coding, I am dedicated to converting website designs into code, putting in my best effort to ensure the visual design is accurately translated into functional and interactive web pages. I continually strive to improve my coding skills and stay updated with industry standards to deliver high-quality results.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Projects -->
+        <section class="projectSection" id="projectTab">
+            <h1 class="projectheadText">My Works</h1>
+            <div class="projectContainer">
+                <div class="myProject figureHidden" id="calculatorProject">
+                    <div class="youtubeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/QQSxgw61vIM?si=B9m32C3dsJ9ptOUK" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h1 class="textDescription">Calculator: Description</h1>
+                        <p class="descriptionContent">
+                            This project is designed to help beginners learn how to solve basic integer operations and expressions. 
+                            It offers an easy-to-follow approach by providing step-by-step explanations of each operation in an expression.
+                            Users can enter their expressions, and the tool will calculate and explain the results. Built with HTML for layout, CSS for styling, 
+                            and JavaScript for functionality, this project aims to make learning math expressions simple and engaging.
+                        </p>
+                    </div>
+                </div>
+                <!-- Notes -->
+                <div class="myProject figureHidden" id="notesProject">
+                    <div class="youtubeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/KBt555sYRBE?si=k7rUfVDbeUGUFQAf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h1 class="textDescription">Notes: Description</h1>
+                        <p class="descriptionContent">
+                            This project demonstrates the developer's skills in creativity, critical thinking, and problem-solving through a CRUD application. 
+                            Users can create, read, update, and delete records, with data stored in the browser’s localStorage. This application shows how to
+                            manage data on the client side without needing a server database. Using HTML for structure, CSS for design, and JavaScript for interactivity, 
+                            this project highlights the developer’s ability to handle data and design user interfaces effectively.
+                        </p>
+                    </div>
+                </div>
+                <!-- WireFrame -->
+                <div class="myProject figureHidden" id="wireframeProject">
+                    <div class="youtubeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/0N3R1kVnsDI?si=oZG4SfFZ_7BxV1OH" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h1 class="textDescription">WireFrame: Description</h1>
+                        <p class="descriptionContent">
+                            This project showcases the entire process of designing a website, from initial wireframes to the final product. It starts with creating wireframes 
+                            and prototypes in Figma to plan the website’s layout and user experience. These designs are then turned into a working website through coding. 
+                            This project emphasizes the importance of planning and design in creating a user-friendly and attractive website. It demonstrates how design and 
+                            development skills come together to produce a well-designed final product.
+                        </p>
+                    </div>
+                </div>
+                <!-- 3Treats -->
+                <div class="myProject figureHidden" id="3treatsProject">
+                    <div class="youtubeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/ToCBngr5XIY?si=U_xGHDsgu3-deQX1" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h1 class="textDescription">3Treats: Description</h1>
+                        <p class="descriptionContent">
+                            This project showcases the design and functionality of a responsive website, emphasizing front-end development aspects such as user interface and user 
+                            experience design. The website is engineered to perform seamlessly across different devices by utilizing media queries for responsiveness. 
+                            Initial designs were crafted in Figma, and the final product was developed using HTML, CSS, and JavaScript. Additionally, the project includes 
+                            an attribution page to credit the owner of the images used on the site. This project demonstrates a strong capability in creating a polished, 
+                            responsive web interface that maintains both aesthetic appeal and functionality across various devices.
+                        </p>
+                    </div>
+                </div>
+                <!-- Thesis -->
+                <div class="myProject figureHidden" id="thesisProject">
+                    <div class="youtubeContainer">
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/upSMhUnzoMk?si=YonIHz8RIOdbUGm7" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                    <div class="description">
+                        <h1 class="textDescription">Thesis: Description</h1>
+                        <p class="descriptionContent">
+                            The "Artificial Intelligence-Based Manifesto System" is an undergraduate thesis project designed to streamline the process of enlisting passenger information for boats. 
+                            The system, comprising a computer set and a Logitech camera, employs the Haar Cascade and Local Binary Pattern Histogram algorithms for face detection and recognition. 
+                            It generates a CSV report of passengers, aiding administrators in efficient data management and supporting search and rescue operations during emergencies.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- About Me -->
+        <section class="aboutSection" id="aboutTab">
+            <h1 class="show">About Me</h1>
+            <div class="aboutContainer">
+                <div class="leftAbout">
+                    <img src="/img/mypicone.png" alt="picture" class="aboutPicture">
+                    <img src="/img/mypictwo.png" alt="picture" class="aboutPicture">
+                </div>
+                <div class="rightAbout rightHidden">
+                    <div class="rightAboutContainer">
+                        <div class="topRightContent">
+                            <h1 class="hidden">About Me</h1>
+                            <p>I am a graduate with a Bachelor of Science in Computer Engineering. My love for designing and interest in creating front-end designs 
+                                for websites make me dedicated, eager to learn, and passionate about technology. With a foundation and hands-on experience, I thrive 
+                                in front-end coding. My commitment to continuous learning drives my success in dynamic environments.</p>
+                        </div>
+                        <div class="middleRightContent">
+                            <li class="optionTab" onclick="showAbout(0)">Work Approach</li>
+                            <li class="optionTab" onclick="showAbout(1)">Ministry Involvement</li>
+                        </div>
+                        <div class="bottomRightContent">
+                            <p class="aboutInfo">Regarding task management, I consistently strive to meet deadlines and maintain organization. If I encounter any uncertainties, 
+                                I promptly seek guidance to ensure clarity. I dedicate my full effort to each task or project and value the feedback and suggestions 
+                                from my colleagues and supervisors. I am enthusiastic about exploring and collaborating on projects within a team and actively listen to 
+                                others when necessary. My goal is to achieve excellence in all my endeavors.</p>
+                            <p class="aboutInfo">Over the past five years, my involvement in various church ministries—such as lector, commentator, choir member, youth leader, 
+                                and catechetical instructor—has greatly enriched my spiritual journey and personal growth. These roles have strengthened my faith, public speaking, 
+                                and musical abilities, and deepened my understanding of scripture and mentorship. This service has inspired a joyful approach to my responsibilities. 
+                                Overall, it has been a tremendous blessing, fostering compassion, resilience, and dedication in all aspects of my life.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer class="footerContainer"> 
+        <!-- Footer 1 -->
+        <div class="footerSection">
+            <div class="rightContent">
+                <img src="/img/tsenLogo.png" alt="picture">
+                <p>My portfolio is  a collection of my work designed to highlight my skills and abilities. its main objective is to showcase my talents to potential employers or clients</p>
+            </div>
+        </div>
+        <!-- Footer 2 -->
+        <div class="footerSection">
+            <div class="footerSectionTwo">
+                <!-- Content one -->
+                <div class="informationOne">
+                    <h1>Projects</h1>
+                    <div class="projectList">
+                        <li><a href="#calculatorProject">Calculator</a></li>
+                        <li><a href="#notesProject">Notes</a></li>
+                        <li><a href="#wireframeProject">Wireframe</a></li>
+                        <li><a href="#3treatsProject">3Treats</a></li>
+                        <li><a href="#thesisProject">Thesis</a></li>
+                    </div>
+                </div>
+                <!-- Content Two -->
+                <div class="informationTwo">
+                    <div class="contentOne">
+                        <h1>Services</h1>
+                        <div class="serviceList">
+                            <li><a href="#webdesignFrame">Web Design</a></li>
+                            <li><a href="#responsiveFrame">Responsive Website</a></li>
+                            <li><a href="#codingFrame">Front-End Coding</a></li>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer 3 -->
+        <div class="footerSection">
+            <div class="leftContent">
+                <div class="contentLeft">
+                    <h1>Contact Me</h1>
+                    <div class="contactInformation">
+                        <li>nidotristanstephen@gmail.com</li>
+                        <li>093 8862 7355</li>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+     <script src="/js/controlandscroll.js"></script>
+</body>
+</html>

@@ -1,0 +1,74 @@
+.educationSection{
+    height: max-content;
+    padding: 100px 0px 100px 0px;
+    margin: 0;
+    background-color: #FFFFFF;
+}
+.educHeadtext{
+    font-size: 3em;
+    text-transform: uppercase;
+    color: #06070A;
+    margin: 0;
+    text-align: center;
+}
+.educationInfo{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin: 50px 0px;
+    flex-wrap: wrap;
+}
+.educationContainer{
+    padding: 60px 20px;
+    color: #06070A;
+    text-align: center;
+    transition: all 0.5s;
+    width: 300px;
+}
+.educationContainer h1{
+    text-transform: uppercase;
+}
+.educationContainer img{
+    padding: 20px;
+    width: 50px;
+    border-radius: 50%;
+    background-color: #FCD70D;
+}
+.information p{
+    color: #06070A;
+    text-align: center;
+}
+.educationContainer:hover{
+    background-color: #8b8b8b;
+    color: #FFFFFF;
+    border: none;
+    transform: scale(1.1);
+}
+.educationContainer:hover img{
+    background-color: #FFFFFF;
+}
+.educationContainer:hover .information p{
+    color: #FFFFFF;
+}
+@media screen and (max-width: 1024px) and (min-width: 769px){
+    .educHeadtext{font-size: 3em;}
+    .educationInfo{margin-top: 20px;}
+    .educationContainer{width: 300px;}
+}
+@media screen and (max-width: 768px) and (min-width: 426px){
+    .educHeadtext{font-size: 3em;}
+    .educationInfo{margin-top: 20px;}
+    .educationContainer{width: 300px;}
+}
+@media screen and (max-width: 532px) and (min-width: 320px){
+    .educHeadtext{font-size: 2em;}
+}
+@media screen and (max-width: 425px) and (min-width: 375px){
+    .educationInfo{margin-top: 20px;}
+    .educationContainer{width: 300px; padding: 20px 10px;}
+}
+@media screen and (max-width: 320px) and (min-width: 200px){
+    .educationInfo{margin-top: 20px;}
+    .educationContainer{width: 250px; padding: 20px 10px;}
+}
+

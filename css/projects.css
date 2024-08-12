@@ -1,0 +1,112 @@
+.projectSection{
+    height: max-content;
+    padding: 100px 0px 50px 0px;
+    margin: 0;
+    background-color: #06070A;
+}
+.projectheadText{
+    font-size: 3em;
+    color: #FFFFFF;
+    text-align: center;
+    text-transform: uppercase;
+    position: relative;
+    margin: 0;
+}
+.projectheadText::after{
+    content: "";
+    position: absolute;
+    left: 25%;
+    bottom: -20px;
+    width: 50%;
+    height: 6px;
+    background-color: #FFFFFF;
+}
+.projectContainer{
+    margin: 100px 0px 20px 0px;
+    display: flex;
+    row-gap: 80px;
+    column-gap: 50px;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.myProject{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+}
+iframe{
+    display: block;
+}
+.textDescription, .descriptionContent{
+    color: #FFFFFF;
+}
+.textDescription{
+    font-size: 2.5em;
+    margin: 0;
+}
+.description{
+    width: 600px;
+    padding: 0px 0px 0px 50px;
+}
+.descriptionContent{
+    text-align: justify;
+    text-indent: 5ch;
+}
+
+@media screen and (max-width: 532px) and (min-width: 426px){
+    .projectheadText{font-size: 2em;}
+}
+@media screen and (max-width: 425px) and (min-width: 376px){
+    .projectheadText{font-size: 2em;}
+}
+@media screen and (max-width: 375px) and (min-width: 320px){
+    .projectheadText{font-size: 2em;}
+}
+
+@media screen and (max-width: 1330px) and (min-width: 769px){
+    .projectContainer{margin-top: 50px;row-gap: 50px;}
+    .myProject{flex-direction: column;}
+    .description{width: 550px;padding: 0;}
+    .textDescription{margin-top: 20px;}
+}
+@media screen and (max-width: 768px) and (min-width: 638px){
+    .projectheadText::after{left: 20%;width: 60%;}
+    .projectContainer{margin-top: 50px;row-gap: 50px;}
+    .myProject{flex-direction: column;}
+    .description{width: 550px;padding: 0;}
+    .textDescription{font-size: 2.5em;margin-top: 20px;}
+}
+@media screen and (max-width: 637px) and (min-width: 569px){
+    .projectheadText::after{left: 18%;width: 65%;}
+    .projectContainer{margin-top: 50px;row-gap: 50px;}
+    .myProject{flex-direction: column;}
+    .description{width: 500px;padding: 0;}
+    .textDescription{font-size: 1.5em;margin-top: 20px;}
+    iframe{width: 500px;}    
+}
+@media screen and (max-width: 568px) and (min-width: 426px){
+    .projectheadText::after{left: 18%;width: 65%;}
+    .projectContainer{margin-top: 50px;row-gap: 50px;}
+    .myProject{flex-direction: column;}
+    .description{width: 380px;padding: 0;}
+    .textDescription{font-size: 1.5em;margin-top: 20px;}
+    iframe{width: 380px;}
+}
+@media screen and (max-width: 425px) and (min-width: 376px){
+    .projectheadText::after{left: 20%;width: 60%;}
+    .projectContainer{margin-top: 50px;row-gap: 30px;}
+    .myProject{display: block;align-content: center;}
+    .description{width: 350px;padding: 0;}
+    .textDescription{font-size: 1.5em;margin-top: 20px;}
+    iframe{width: 350px;}
+}
+@media screen and (max-width: 375px) and (min-width: 320px){
+    .projectheadText::after{left: 20%;width: 60%;}
+    .projectContainer{margin-top: 50px;row-gap: 30px;}
+    .myProject{display: block;align-content: center;}
+    .description{width: 280px;padding: 0;}
+    .textDescription{font-size: 1.5em;margin-top: 20px;}
+    iframe{width: 280px;}
+}
