@@ -1,5 +1,4 @@
 .aboutSection{
-    height: max-content;
     padding: 45px 0px 50px 0px;
     margin: 0;
     background-color: #FFFFFF;
@@ -17,10 +16,6 @@
     text-transform: uppercase;
     margin-bottom: 5px;
 }
-.topaboutContent{
-    text-align: center;
-    margin: 0px 100px;
-}
 .aboutInformation{
     display: flex;
     flex-direction: column;
@@ -33,7 +28,7 @@
     justify-content: center;
 }
 .aboutPicture{
-    width: 250px;
+    width: 300px;
     vertical-align: middle;
 }
 .aboutInfoContainer{
@@ -49,7 +44,10 @@
     text-align: justify;
     vertical-align: middle;
 }
-
+@media screen and (max-width: 1159px) and (min-width: 890px){
+    .aboutPicture{width:300px;}
+    .aboutInfo{width: 400px;}
+}
 @media screen and (max-width: 889px) and (min-width: 769px){
     .aboutContent{row-gap: 20px;}
     .aboutText{text-align: center;}
