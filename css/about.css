@@ -11,166 +11,79 @@
     flex-wrap: wrap;
     margin: 50px 0px;
 }
-.leftAbout{
-    width: auto;
-}
-.leftAbout img{
-    width: 457px;
-    display: block;
-    transition: all 0.5s;
-}
-.aboutPicture:nth-child(2){
-    display: none;
-}
-.rightAbout{
-    padding: 0px 10px 0px 50px;
-    height: max-content;
-    background-color: #06070A;
-}
-.topRightContent h1{
+.show{
     font-size: 2.5em;
-    margin: 3px 0px;
+    text-align: center;
     text-transform: uppercase;
+    margin-bottom: 5px;
 }
-.topRightContent p, .bottomRightContent p{
-    text-align: justify;
-    line-height: 1.7rem;
-    text-indent: 5ch;
+.topaboutContent{
+    text-align: center;
+    margin: 0px 100px;
 }
-.topRightContent, .middleRightContent, .bottomRightContent{
-    width: 750px;
+.aboutInformation{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
 }
-.middleRightContent{
+.aboutContent{
     display: flex;
     flex-direction: row;
-    justify-content: flex-start;
-    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
 }
-.middleRightContent li, .topRightContent p, .bottomRightContent p, .topRightContent h1{
-    color: #FFFFFF;
+.aboutPicture{
+    width: 250px;
+    vertical-align: middle;
 }
-.middleRightContent li{
-    list-style: none;
-    cursor: pointer;
-    font-size: 1.3em;
+.aboutInfoContainer{
+    padding: 0px 20px;
 }
-.aboutInfo:nth-child(2){
-    display: none;
-}
-.optionTab:nth-child(1){
-    font-weight: 600;
-}
-.optionTab:nth-child(2){
-    color: gray;
-}
-.show{
-    display: none;
+.aboutText{
     color: #06070A;
+    padding: 0;
+    margin: 0;
 }
-@media screen and (max-width: 1305px) and (min-width: 1248px){
-    .aboutContainer{row-gap: 0px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent h1{text-align: left;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 600px;}
-    .leftAbout img{width: 526px;}
-}
-@media screen and (max-width: 1247px) and (min-width: 1175px){
-    .aboutContainer{row-gap: 0px; padding: 0px 20px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none; margin-top: 0;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 550px;}
-    .leftAbout img{width: 485px;}
-    .leftAbout{display: block; align-content: center;}
-}
-@media screen and (max-width: 1175px) and (min-width: 1094px){
-    .aboutContainer{row-gap: 0px; padding: 0px 20px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none; margin-top: 0;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 550px;}
-    .leftAbout img{width: 650px;}
-    .leftAbout{display: block; align-content: center;}
+.aboutInfo{
+    width: 600px;
+    text-align: justify;
+    vertical-align: middle;
 }
 
-@media screen and (max-width: 1094px) and (min-width: 944px){
-    .aboutContainer{row-gap: 0px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent h1{text-align: center;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 600px;}
-    .leftAbout img{width: 700px;}
+@media screen and (max-width: 889px) and (min-width: 769px){
+    .aboutContent{row-gap: 20px;}
+    .aboutText{text-align: center;}
+    .topaboutContent{margin: 0px 50px;}
+    .aboutPicture{width: 300px;}
 }
-@media screen and (max-width: 943px) and (min-width: 769px){
-    .aboutContainer{row-gap: 0px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent h1{text-align: center;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 500px;}
-    .leftAbout img{width: 600px;}
+@media screen and (max-width: 768px) and (min-width: 544px){
+    .aboutContent{row-gap: 20px;}
+    .aboutInfo{width: 500px;}
+    .aboutText{text-align: center;}
+    .topaboutContent{margin: 0px 40px;}
+    .topaboutContent p{font-size: 0.9em;}
+    .aboutPicture{width: 300px;}
 }
-@media screen and (max-width: 768px) and (min-width: 636px){
-    .aboutContainer{row-gap: 0px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent h1{text-align: center;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 400px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .leftAbout img{width: 500px;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .aboutSection{padding-bottom: 30px;}
-}
-@media screen and (max-width: 635px) and (min-width: 516px){
-    .leftAbout img{width: 400px; padding: 0px 0px;}
-    .aboutContainer{row-gap: 0px;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent h1{text-align: center;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 300px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .rightAbout{padding: 15px 50px 0px 50px;}
-    .aboutSection{padding-bottom: 30px;}
-}
-@media screen and (max-width: 515px) and (min-width: 426px){
-    .aboutContainer{row-gap: 0px;}
-    .topRightContent h1{text-align: center;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 350px;}
-    .leftAbout img{width: 390px;transition: all 0.5s ease-in-out;padding: 0px 20px;}
-    .rightAbout{padding: 0px 20px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .aboutSection{padding-bottom: 30px;}
+@media screen and (max-width: 545px) and (min-width: 426px){
+    .aboutContent{row-gap: 20px;}
+    .aboutInfo{width: 380px;}
+    .aboutText{text-align: center;}
+    .topaboutContent{margin: 0px 40px;}
+    .topaboutContent p{font-size: 0.9em;}
+    .aboutPicture{width: 300px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .aboutContainer{row-gap: 0px;}
-    .topRightContent h1{text-align: center;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 300px;}
-    .leftAbout img{width: 340px;transition: all 0.5s ease-in-out;padding: 0px 20px;}
-    .rightAbout{padding: 0px 20px;}
-    .show{display: block; font-size: 2.5em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .middleRightContent li{font-size: 1em;}
-    .middleRightContent{display: flex;flex-direction: row;justify-content: flex-start;gap: 10px;}
-    .aboutSection{padding-bottom: 30px;}
+    .aboutContent{row-gap: 20px;}
+    .aboutInfo{width: 320px;}
+    .aboutText{text-align: center;}
+    .topaboutContent{margin: 0px 30px;}
+    .topaboutContent p{font-size: 0.9em;}
+    .aboutPicture{width: 300px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .aboutContainer{row-gap: 0px;}
-    .topRightContent h1{text-align: center;}
-    .aboutSection{padding: 20px 0px 50px 0px;}
-    .topRightContent, .middleRightContent, .bottomRightContent{width: 270px; margin-top: 0px;}
-    .leftAbout img{width: 290px;transition: all 0.5s ease-in-out;padding: 0px 10px;}
-    .rightAbout{padding: 0px 10px;}
-    .show{display: block; font-size: 2em; text-transform: uppercase; text-align: center;}
-    .hidden{display: none;}
-    .middleRightContent li{font-size: 1em;}
-    .aboutSection{padding-bottom: 30px;}
+    .aboutContent{row-gap: 20px;}
+    .aboutInfo{width: 275px;}
+    .aboutText{text-align: center;}
+    .topaboutContent{margin: 0px 30px;}
+    .topaboutContent p{font-size: 0.9em;}
 }
