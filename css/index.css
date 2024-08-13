@@ -38,15 +38,12 @@ h3 span{
     background-color: #FFFFFF;
     border: none;
 }
-
-/* Image of me */
 .homeSection .myPic{
     width: 520px;
     position: absolute;
     bottom: 0;
     right: 0;  
 }
-
 .socmedContainer{
     position: absolute;
     height: 100px;
@@ -113,7 +110,7 @@ h3 span{
     .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 510px) and (min-width: 426px){
-    .homeSection{padding-top: 70px;height: 770px;}
+    .homeSection{padding-top: 70px;height: 750px;}
     .textContentContainer{display: flex;place-content: center;}
     .textContent{margin-top: 95px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 400px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
@@ -129,13 +126,13 @@ h3 span{
     .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .homeSection{padding-top: 20px;height: 770px;}
+    .homeSection{padding-top: 20px; height:715px;}
     .textContentContainer{display: flex;place-content: center;}
     .textContent{margin-top: 155px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 380px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
-    .textContent h1{font-size: 2.4rem;}
+    .textContent h1{font-size: 2.5rem;}
     .textContent h3{font-size: 1.2rem;}
-    .textContent p{font-size: 0.7rem;}
+    .textContent p{font-size: 0.85rem;}
     .readBtn{display: none;}
     .socmedContainer{position: absolute;height: 100px;bottom: 220px;left: 20px;}
     .socmedContainer p{display: none;}
@@ -145,7 +142,7 @@ h3 span{
     .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .homeSection{padding-top: 70px;height: 770px;}
+    .homeSection{padding-top: 70px;height: 715px;}
     .textContentContainer{display: flex;place-content: center;}
     .textContent{margin-top: 125px;margin-left: 0px;text-align: center;}
     .homeSection .myPic{width: 300px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
