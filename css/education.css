@@ -54,6 +54,9 @@
 .educationContainer:hover .level{
     color: #FFFFFF;
 }
+@media screen and (max-width: 1159px) and (min-width: 870px){
+    .educationInfo{column-gap: 150px;}
+}
 @media screen and (max-width: 1024px) and (min-width: 769px){
     .educHeadtext{font-size: 2.5em;}
     .educationInfo{margin-top: 20px;}
@@ -65,7 +68,7 @@
     .educationContainer{width: 250px;}
 }
 @media screen and (max-width: 532px) and (min-width: 320px){
-    .educHeadtext{font-size: 1.5em;}
+    .educHeadtext{font-size: 2.5em;}
 }
 @media screen and (max-width: 425px) and (min-width: 375px){
     .educationInfo{margin-top: 20px;}
