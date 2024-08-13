@@ -53,7 +53,7 @@
     width: 400px;
     margin: 10px auto;
     color: #4f4f4f;
-    padding: 20px 50px 20px 0px;
+    padding: 20px 50px 20px 50px;
 }
 h3{
     margin: 5px;
@@ -64,17 +64,6 @@ h3{
     margin: 20px 0px;
     padding: 5px;
     list-style: none;
-}
-.barContainer{
-    display: inline;
-    position: relative;
-}
-.percentage{
-    position: absolute;
-    right: -50px;
-    bottom: -3px;
-    color: #FFFFFF;
-    font-size: 1em;
 }
 .bar{
     background-color: #FFFFFF;
@@ -146,17 +135,17 @@ h3{
     .skillPercent{width: 400px;}
 }
 @media screen and (max-width: 532px) and (min-width: 426px){
-    .skillHeadtext{font-size: 2em;}
+    .skillHeadtext{font-size: 2.5em;}
     .skillPic img{width: 300px;}
     .skillPercent{width: 300px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .skillHeadtext{font-size: 2em;}
+    .skillHeadtext{font-size: 2.5em;}
     .skillPic img{width: 300px;}
-    .skillPercent{width: 300px;}
+    .skillPercent{width: 300px;padding: 20px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
     .skillHeadtext{font-size: 2em;}
     .skillPic img{width: 250px;}
-    .skillPercent{width: 250px;}
+    .skillPercent{padding: 20px;width: 250px;}
 }
