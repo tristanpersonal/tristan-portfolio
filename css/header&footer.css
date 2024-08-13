@@ -13,7 +13,7 @@ header{
 }
 #myNav{
     background-color: #06070A;
-	height: 35px;
+    height: max-content;
     padding: 20px 25px;
     font-weight: 300;
     display: flex;
@@ -22,7 +22,11 @@ header{
     align-items: center;
 }
 #myNav .logoSection{
-    padding: 0px 10px;
+    padding: 0px 0px;
+    margin: 0;
+}
+#myNav p{
+    margin: 0;
 }
 #myNav p img{
     width: 80px;
@@ -31,23 +35,23 @@ header{
     color: #FFFFFA;
 }
 #myNav ul, #menu li{
-	margin: 0 auto;
-	padding: 0;
-	list-style: none;
+    margin: 0 auto;
+    padding: 0;
+    list-style: none;
 }
 #myNav ul{
-	width: 100%;
-	text-align: left;
+    width: 100%;
+    text-align: left;
 }
 #myNav li{
-	display: inline-block;
+    display: inline-block;
 }
 .menuSection a{
-	line-height: 45px;
-	padding: 0 20px;
-	text-decoration: none;
-	color: #FFFFFF;
-	font-size: 1rem;
+    line-height: 45px;
+    padding: 0 20px;
+    text-decoration: none;
+    color: #FFFFFF;
+    font-size: 1rem;
     position: relative;
     margin: 0px 10px;
     font-weight: bold;
@@ -70,23 +74,23 @@ header{
     transform-origin: bottom left;
 }
 #myNav input{
-	display: none;
-	margin: 0;
-	padding: 0;
-	height: 45px;
-	width: max-content;
-	opacity: 0;
-	cursor: pointer
+    display: none;
+    margin: 0;
+    padding: 0;
+    height: 45px;
+    width: max-content;
+    opacity: 0;
+    cursor: pointer
 }
 #myNav label{
-	display: none;
-	line-height: 105px;
-	text-align: center;
+    display: none;
+    line-height: 105px;
+    text-align: center;
 }
 #myNav label:before{
-	font-size: 3rem;
-	color: #FFFFFF;
-	content: "\2261";
+    font-size: 3rem;
+    color: #FFFFFF;
+    content: "\2261";
     outline: none;
 }
 
@@ -140,64 +144,43 @@ a:visited, a:active, a:focus{
 }
 /* Header */
 @media screen and (max-width: 920px){
-	#myNav {position:relative}
+    #myNav {position:relative}
     #myNav ul {background:#ffffff;position:absolute;top:100%;right:0;left:0;z-index:3;max-height: 0;overflow: hidden;opacity: 0;display:block;text-align:right;transition: max-height 1s ease-out;}
     #myNav li {display:block;float:none;width:auto;text-align: left;}
     .menuSection a{color: #06070A;}
-	#myNav input, #myNav label {position:absolute;top:0;right:35px;display:block;}
-	#myNav input {z-index:2}
-	#myNav input:checked + label {color:#FFFFFF;}
-	#myNav input:checked + label:before {content:"\00d7"; font-size: 3rem;}
+    #myNav input, #myNav label {position:absolute;top:0;right:35px;display:block;}
+    #myNav label{line-height: 71px;}
+    #myNav p img{width: 70px;margin-bottom: -7px;}
+    #myNav input {z-index:2}
+    #myNav input:checked + label {color:#FFFFFF;}
+    #myNav input:checked + label:before {content:"\00d7"; font-size: 3rem;}
     #myNav input:checked ~ ul{max-height: 500px;opacity: 1;}
 }
 @media screen and (max-width: 767px) and (min-width: 592px){
     #myNav {padding: 20px 25px;}
     .menuSection a{font-size: 1rem;}
-    #myNav label{line-height: 83px;}
-    #myNav input:checked + label:before {font-size: 3rem;}
-    #myNav p img{width: 100px;}
-    #myNav .logoSection{padding: 0px 0px;}
-    #myNav label:before{font-size: 3rem;}
 }
 @media screen and (max-width: 591px) and (min-width: 425px){
     #myNav {padding: 20px 25px;}
     .menuSection a{font-size: 1rem;}
-    #myNav label{line-height: 83px;}
-    #myNav input:checked + label:before {font-size: 2em;}
-    #myNav p img{width: 80px;}
-    #myNav .logoSection{padding: 0px 0px;}
-    #myNav label:before{font-size: 2em;}
+    #myNav label{line-height: 73px;}
 }
 @media screen and (max-width: 424px) and (min-width: 392px){
-    #myNav p{font-size: 0.75rem; padding: 10px 10px;}
     #myNav {padding: 20px 25px;}
     .menuSection a{font-size: 0.85rem;}
-    #myNav input:checked + label:before {font-size: 2em;}
-    #myNav p img{width: 70px;}
-    #myNav label{line-height: 80px;}
-    #myNav .logoSection{padding: 0px 0px;}
-    #myNav label:before{font-size: 2em;}
+    #myNav label{line-height: 71px;}
+    #myNav p img{margin-bottom: -7px;}
 }
 @media screen and (max-width: 391px) and (min-width: 375px){
-    #myNav p{font-size: 0.75rem; padding: 10px 10px;}
     #myNav {padding: 20px 25px;}
     .menuSection a{font-size: 0.85rem;}
-    #myNav input:checked + label:before {font-size: 2em;}
-    #myNav p img{width: 70px;}
-    #myNav label{line-height: 80px;}
-    #myNav .logoSection{padding: 0px 0px;}
-    #myNav label:before{font-size: 2em;}
 }
 @media screen and (max-width: 374px) and (min-width: 320px){
-    #myNav p{font-size: 0.75rem; padding: 10px 10px;}
     #myNav {padding: 20px 25px;}
     .menuSection a{font-size: 0.75rem;}
-    #myNav label{line-height: 84px;}
-    #myNav input:checked + label:before {font-size: 2em;}
-    #myNav p img{width: 70px;}
-    #myNav .logoSection{padding: 0px 0px;}
-    #myNav label:before{font-size: 2em;}
+    #myNav input:checked + label:before {font-size: 3em;}
 }
+
 /* Footer */
 @media screen and (max-width: 1351px) and (min-width: 1025px){
     .footerContainer{display: block; text-align: center;}
