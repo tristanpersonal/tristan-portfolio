@@ -7,7 +7,6 @@
     opacity: 1;
     transform: translateX(0%);
 }
-
 .percentHidden{
     opacity: 0;
     transform: translateX(-100%);
@@ -17,7 +16,6 @@
     opacity: 1;
     transform: translateX(0%);
 }
-
 .serviceHidden{
     opacity: 0;
     transform: translateY(50%);
@@ -27,28 +25,15 @@
     opacity: 1;
     transform: translateY(0%);
 }
-
 .rightHidden{
     opacity: 0;
-    transform: translateX(-50%);
+    transform: translateY(50%);
     transition: all 0.5s;
 }
 .rightShow{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
-@media screen and (max-width: 1246px) and (min-width: 1095px){
-    .rightHidden{
-        opacity: 0;
-        transform: translateY(50%);
-        transition: all 0.5s;
-    }
-    .rightShow{
-        opacity: 1;
-        transform: translateY(0%);
-    }
-}
-
 .figureHidden{
     opacity: 0;
     transform: translateY(50%);
