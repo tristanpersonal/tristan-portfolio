@@ -1,3 +1,6 @@
+*{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
 header{
     position: fixed;
     top: 0;
@@ -84,6 +87,7 @@ header{
 	font-size: 3rem;
 	color: #FFFFFF;
 	content: "\2261";
+    outline: none;
 }
 
 /* Footer */
@@ -128,6 +132,12 @@ header{
 .projectList, .serviceList, .contactInformation{
     margin-top: 10px;
 }
+input, a{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+}
+a:visited, a:active, a:focus{
+    outline: none;
+}
 /* Header */
 @media screen and (max-width: 920px){
 	#myNav {position:relative}
@@ -136,7 +146,7 @@ header{
     .menuSection a{color: #06070A;}
 	#myNav input, #myNav label {position:absolute;top:0;right:35px;display:block;}
 	#myNav input {z-index:2}
-	#myNav input:checked + label {color:#FFFFFF}
+	#myNav input:checked + label {color:#FFFFFF;}
 	#myNav input:checked + label:before {content:"\00d7"; font-size: 3rem;}
     #myNav input:checked ~ ul{max-height: 500px;opacity: 1;}
 }
