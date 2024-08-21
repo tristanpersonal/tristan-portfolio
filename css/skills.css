@@ -11,16 +11,6 @@
     margin: 0;
     position: relative;
 }
-
-.skillHeadtext::after{
-    content: "";
-    position: absolute;
-    left: 25%;
-    bottom: -20px;
-    width: 50%;
-    height: 6px;
-    background-color: #FFFFFF;
-}
 .skillInformation{
     display: flex;
     flex-direction: row;
@@ -35,7 +25,6 @@
     padding: 20px;
 }
 .skillPic img{
-    border-radius: 50%;
     object-fit: cover;
     border: 10px solid #FFFFFF;
     transition: 0.3s ease-in-out;
@@ -130,22 +119,22 @@ h3{
     0%{width: 0%;}
     100%{width: 35%;}
 }
+@media screen and (max-width: 909px){
+    .skillPic img{border-radius: 50%;}
+}
 @media screen and (max-width: 649px) and (min-width: 533px){
     .skillPic img{width: 400px;}
     .skillPercent{width: 400px;}
 }
 @media screen and (max-width: 532px) and (min-width: 426px){
-    .skillHeadtext{font-size: 2.5em;}
     .skillPic img{width: 300px;}
     .skillPercent{width: 300px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .skillHeadtext{font-size: 2.5em;}
     .skillPic img{width: 300px;}
     .skillPercent{width: 300px;padding: 20px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .skillHeadtext{font-size: 2em;}
     .skillPic img{width: 250px;}
     .skillPercent{padding: 20px;width: 250px;}
 }
