@@ -30,14 +30,6 @@ h3 span{
 .textContent p{
     font-size: 1.6rem;
 }
-.readBtn{
-    margin-top: 10px;
-    padding: 10px 15px;
-    font-size: 0.75em;
-    color: #06070A;
-    background-color: #FFFFFF;
-    border: none;
-}
 .homeSection .myPic{
     width: 520px;
     position: absolute;
@@ -69,92 +61,67 @@ h3 span{
     display: none;
 }
 
+@media screen and (max-width: 1189px){
+    .readBtn{display: none;}
+    .textContent{margin-left: 0px;text-align: center;}
+    .homeSection .myPic{position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%);}
+    .textContentContainer{display: flex;place-content: center;}
+}
 @media screen and (max-width: 1189px) and (min-width: 767px){
     .homeSection{height: 770px;}
-    .textContentContainer{display: flex;place-content: center; margin-top: 0px}
-    .textContent{margin-top: 0px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 490px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .textContentContainer{margin-top: 0px}
+    .textContent{margin-top: 0px;}
+    .homeSection .myPic{width: 490px;}
     .textContent h1{font-size: 4rem;}
     .textContent h3{font-size: 2em;}
     .textContent p{font-size: 1.2rem;}
 }
 @media screen and (max-width: 768px) and (min-width: 647px){
     .homeSection{padding-top: 70px;height: 770px;}
-    .textContentContainer{display: flex;place-content: center; margin-top: -70px;}
-    .textContent{margin-top: 135px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 480px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .textContentContainer{margin-top: -70px;}
+    .textContent{margin-top: 135px;}
+    .homeSection .myPic{width: 480px;}
     .textContent h1{font-size: 4rem;}
     .textContent h3{font-size: 2rem;}
     .textContent p{font-size: 1rem;}
+}
+@media screen and (max-width: 768px){
+    .socmedContainer{display: none;}
     .readBtn{display: none;}
-    .socmedContainer{position: absolute;height: 100px;bottom: 75px;left: 35px;}
-    .socmedContainer p{display: none;}
-    .socmedIcon .aboutIcon{width: 40px; display:inline;background-color: #FFFFFF;border-radius: 35px;border: 1px solid #FFFFFF; vertical-align: middle; margin-left: 0px;}
-    .socmedIcon{display: flex;flex-direction: column;justify-content: flex-start;row-gap: 10px;}
-    .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 646px) and (min-width: 511px){
     .homeSection{padding-top: 70px;height: 770px;}
-    .textContentContainer{display: flex;place-content: center; margin-top: -40px;}
-    .textContent{margin-top: 95px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 480px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .textContentContainer{margin-top: -40px;}
+    .textContent{margin-top: 95px;}
+    .homeSection .myPic{width: 480px;}
     .textContent h1{font-size: 3rem;}
     .textContent h3{font-size: 1.5rem;}
     .textContent p{font-size: 0.75rem;}
-    .readBtn{display: none;}
-    .socmedContainer{position: absolute;height: 100px;bottom: 280px;left: 35px;}
-    .socmedContainer p{display: none;}
-    .socmedIcon img{width: 35px;}
-    .socmedIcon .aboutIcon{width: 30px; display:inline;background-color: #FFFFFF;border-radius: 35px;border: 1px solid #FFFFFF; vertical-align: middle; margin-left: 2px;}
-    .socmedIcon{display: flex;flex-direction: column;justify-content: flex-start;row-gap: 10px;}
-    .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 510px) and (min-width: 426px){
     .homeSection{padding-top: 70px;height: 750px;}
-    .textContentContainer{display: flex;place-content: center;}
-    .textContent{margin-top: 95px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 400px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .textContent{margin-top: 95px;}
+    .homeSection .myPic{width: 400px;}
     .textContent h1{font-size: 2.6rem;}
     .textContent h3{font-size: 1.4rem;}
     .textContent p{font-size: 0.75rem;}
-    .readBtn{display: none;}
-    .socmedContainer{position: absolute;height: 100px;bottom: 230px;left: 35px;}
-    .socmedContainer p{display: none;}
-    .socmedIcon img{width: 35px;}
-    .socmedIcon .aboutIcon{width: 30px; display:inline;background-color: #FFFFFF;border-radius: 35px;border: 1px solid #FFFFFF; vertical-align: middle; margin-left: 2px;}
-    .socmedIcon{display: flex;flex-direction: column;justify-content: flex-start;row-gap: 10px;}
-    .socmedIcon img:nth-child(3){margin-top: 4px;}
+}
+@media screen and (max-width: 425px){
+    .textContent h3{font-size: 1.2rem;}
+    .homeSection{height:715px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .homeSection{padding-top: 20px; height:715px;}
-    .textContentContainer{display: flex;place-content: center;}
-    .textContent{margin-top: 155px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 380px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .homeSection{padding-top: 20px;}
+    .textContent{margin-top: 155px;}
+    .homeSection .myPic{width: 380px;}
     .textContent h1{font-size: 2.5rem;}
-    .textContent h3{font-size: 1.2rem;}
     .textContent p{font-size: 0.85rem;}
-    .readBtn{display: none;}
-    .socmedContainer{position: absolute;height: 100px;bottom: 220px;left: 20px;}
-    .socmedContainer p{display: none;}
-    .socmedIcon img{width: 35px;}
-    .socmedIcon .aboutIcon{width: 30px; display:inline;background-color: #FFFFFF;border-radius: 35px;border: 1px solid #FFFFFF; vertical-align: middle; margin-left: 2px;}
-    .socmedIcon{display: flex;flex-direction: column;justify-content: flex-start;row-gap: 10px;}
-    .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .homeSection{padding-top: 70px;height: 715px;}
-    .textContentContainer{display: flex;place-content: center;}
-    .textContent{margin-top: 125px;margin-left: 0px;text-align: center;}
-    .homeSection .myPic{width: 300px;position: absolute;bottom: 0;left: 50%;transform: translate(-50%, 0%); }
+    .homeSection{padding-top: 70px;}
+    .textContent{margin-top: 125px;}
+    .homeSection .myPic{width: 300px;}
     .textContent h1{font-size: 2rem;}
-    .textContent h3{font-size: 1.2rem;}
     .textContent p{font-size: 0.7rem;}
-    .readBtn{display: none;}
-    .socmedContainer{position: absolute;height: 100px;bottom: 180px;left: 15px;}
-    .socmedContainer p{display: none;}
-    .socmedIcon img{width: 35px;}
-    .socmedIcon .aboutIcon{width: 30px; display:inline;background-color: #FFFFFF;border-radius: 35px;border: 1px solid #FFFFFF; vertical-align: middle; margin-left: 2px;}
-    .socmedIcon{display: flex;flex-direction: column;justify-content: flex-start;row-gap: 10px;}
-    .socmedIcon img:nth-child(3){margin-top: 4px;}
 }
 
