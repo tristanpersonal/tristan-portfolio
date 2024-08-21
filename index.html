@@ -14,15 +14,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <title>My Portfolio</title>
+    <title>Portfolio</title>
 </head>
 <style>
     html{scroll-behavior: smooth;}
     body{font-family: "Poppins", sans-serif;}
-    section{scroll-margin-top: 75px;}
-    .myService{scroll-margin-top: 410px;}
-    .myProject:nth-child(1), .myProject:nth-child(2), .myProject:nth-child(3), .myProject:nth-child(5){scroll-margin-top: 480px;}
-    .myProject:nth-child(4){scroll-margin-top: 520px;}
+    section{scroll-margin-top: 70px;}
 </style>
 <body>
     <!-- Header -->
@@ -30,15 +27,17 @@
         <nav id='myNav'>
             <div class="logoSection">
                 <p><a href="#homeTab"><img src="img/tsenLogo.png" alt="logo-pic"></a></p>
+                <a href="https://drive.google.com/file/d/1msWPEf1zCssoCeTRgtzrE1y4plUuCnVS/view?usp=sharing" target="_blank"><button class="showBtn">View CV</button></a>
             </div>
             <div class="menuSection">
                 <input type='checkbox' id='responsiveMenu'>
                 <label for="responsiveMenu" class="burgerIcon"></label>
                 <ul>
-                    <li><a href='#homeTab'>Home</a></li>
-                    <li><a href='#educTab'>Education</a></li>
-                    <li><a href='#skillTab'>Skills</a></li>
-                    <li><a href='#projectTab'>Projects</a></li>
+                    <li><a href='#homeTab' id="location">Home</a></li>
+                    <li><a href='#educTab' id="location">Education</a></li>
+                    <li><a href='#skillTab' id="location">Skills</a></li>
+                    <li><a href='#projectTab' id="location">Projects</a></li>
+                    <li><a href='#aboutTab' id="location"><Button class="aboutBtn">About me</Button></a></li>
                 </ul>
             </div>
           </nav>
@@ -52,8 +51,8 @@
                     <h1>Hi, I am Tristan</h1>
                     <h3>Aspiring <span>Front-End Developer</span></h3>
                     <p>Passionate about crafting and engaging website interfaces</p>
-                    <a href="#aboutTab">
-                        <button class="readBtn">Read more</button>
+                    <a href="https://drive.google.com/file/d/1msWPEf1zCssoCeTRgtzrE1y4plUuCnVS/view?usp=sharing" target="_blank">
+                        <button class="readBtn">View CV</button>
                     </a>
                 </div>
             </div>
@@ -61,7 +60,6 @@
             <div class="socmedContainer">
                 <p>My social media</p> 
                 <div class="socmedIcon">
-                    <a href="#aboutTab"><img src="img/info.png" alt="picture" class="aboutIcon"></a>
                     <a href="https://www.facebook.com/t369s48e5n.001?mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt="picture"></a>
                     <a href="https://www.instagram.com/tristanstephennido?igsh=MXE0aXV6YTNzbjRpZg==" target="_blank"><img src="img/instagram.png" alt="picture"></a>
                 </div>
@@ -70,6 +68,7 @@
         <!-- Education -->
         <section class="educationSection" id="educTab">
             <h1 class="educHeadtext">Educational Attainment</h1>
+            <p class="educSubtext">Here is an overview of my educational background, which forms the foundation of my qualifications.</p>
             <div class="educationInfo">
                 <div class="educationContainer educationHidden">
                     <p><img src="img/garpCap2.png" alt="gradCap"></p>
@@ -307,52 +306,34 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="footerContainer"> 
-        <!-- Footer 1 -->
-        <div class="footerSection">
-            <div class="rightContent">
-                <img src="img/tsenLogo.png" alt="picture">
-                <p>My portfolio is  a collection of my work designed to highlight my skills and abilities. its main objective is to showcase my talents to potential employers or clients</p>
-            </div>
-        </div>
-        <!-- Footer 2 -->
-        <div class="footerSection">
-            <div class="footerSectionTwo">
-                <!-- Content one -->
-                <div class="informationOne">
-                    <h1>Projects</h1>
-                    <div class="projectList">
-                        <li><a href="#calculatorProject">Calculator</a></li>
-                        <li><a href="#notesProject">Notes</a></li>
-                        <li><a href="#wireframeProject">Wireframe</a></li>
-                        <li><a href="#3treatsProject">3Treats</a></li>
-                        <li><a href="#thesisProject">Thesis</a></li>
+    <footer> 
+        <div class="footerContainer">
+            <!-- Footer 1 -->
+            <div class="footerSection">
+                <div class="rightContent">
+                    <img src="img/tsenLogo.png" alt="picture" class="footer-logo">
+                    <p>My portfolio is  a collection of my work designed to highlight my skills and abilities. its main objective is to showcase my talents to potential employers or clients</p>
+                    <div class="footersocmed">
+                        <a href="https://www.facebook.com/t369s48e5n.001?mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt="" class="footersocmed-icon"></a>
+                        <a href="https://www.instagram.com/tristanstephennido?igsh=MXE0aXV6YTNzbjRpZg==" target="_blank"><img src="img/instagram.png" alt="" class="footersocmed-icon"></a>
                     </div>
                 </div>
-                <!-- Content Two -->
-                <div class="informationTwo">
-                    <div class="contentOne">
-                        <h1>Services</h1>
-                        <div class="serviceList">
-                            <li><a href="#webdesignFrame">Web Design</a></li>
-                            <li><a href="#responsiveFrame">Responsive Website</a></li>
-                            <li><a href="#codingFrame">Front-End Coding</a></li>
+            </div>
+            <!-- Footer 3 -->
+            <div class="footerSection">
+                <div class="leftContent">
+                    <div class="contentLeft">
+                        <h2>Contact Me</h2>
+                        <div class="contactInformation">
+                            <li>nidotristanstephen@gmail.com</li>
+                            <li>0938 862 7355</li>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-        <!-- Footer 3 -->
-        <div class="footerSection">
-            <div class="leftContent">
-                <div class="contentLeft">
-                    <h1>Contact Me</h1>
-                    <div class="contactInformation">
-                        <li>nidotristanstephen@gmail.com</li>
-                        <li>0938 862 7355</li>
-                    </div>
-                </div>
-            </div>
+        <div class="footerBottom">
+            <p>Designed by Tristan</p>
         </div>
     </footer>
      <script src="js/controlandscroll.js"></script>
