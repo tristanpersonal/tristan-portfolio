@@ -48,40 +48,31 @@
     .aboutPicture{width:300px;}
     .aboutInfo{width: 400px;}
 }
-@media screen and (max-width: 889px) and (min-width: 769px){
+@media screen and (max-width: 889px){
     .aboutContent{row-gap: 20px;}
     .aboutText{text-align: center;}
-    .topaboutContent{margin: 0px 50px;}
     .aboutPicture{width: 300px;}
+}
+@media screen and (max-width: 889px) and (min-width: 769px){
+    .topaboutContent{margin: 0px 50px;}
 }
 @media screen and (max-width: 768px) and (min-width: 544px){
-    .aboutContent{row-gap: 20px;}
     .aboutInfo{width: 500px;}
-    .aboutText{text-align: center;}
     .topaboutContent{margin: 0px 40px;}
     .topaboutContent p{font-size: 0.9em;}
-    .aboutPicture{width: 300px;}
 }
 @media screen and (max-width: 545px) and (min-width: 426px){
-    .aboutContent{row-gap: 20px;}
     .aboutInfo{width: 380px;}
-    .aboutText{text-align: center;}
     .topaboutContent{margin: 0px 40px;}
     .topaboutContent p{font-size: 0.9em;}
-    .aboutPicture{width: 300px;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .aboutContent{row-gap: 20px;}
     .aboutInfo{width: 320px;}
-    .aboutText{text-align: center;}
     .topaboutContent{margin: 0px 30px;}
     .topaboutContent p{font-size: 0.9em;}
-    .aboutPicture{width: 300px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .aboutContent{row-gap: 20px;}
     .aboutInfo{width: 275px;}
-    .aboutText{text-align: center;}
     .topaboutContent{margin: 0px 30px;}
     .topaboutContent p{font-size: 0.9em;}
 }
