@@ -12,15 +12,6 @@
     position: relative;
     margin: 0;
 }
-.projectheadText::after{
-    content: "";
-    position: absolute;
-    left: 25%;
-    bottom: -20px;
-    width: 50%;
-    height: 6px;
-    background-color: #FFFFFF;
-}
 .projectContainer{
     margin: 100px 0px 20px 0px;
     display: flex;
@@ -64,69 +55,59 @@ iframe{
     .textDescription{margin-top: 20px;}
 }
 @media screen and (max-width: 1269px) and (min-width: 1150px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 500px;padding: 0px 0px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 500px;}   
 }
 @media screen and (max-width: 1149px) and (min-width: 1025px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .description{width: 800px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 800px; height: 400px;}   
 }
 @media screen and (max-width: 1024px) and (min-width: 891px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 780px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 780px; height: 400px;}   
 }
 @media screen and (max-width: 890px) and (min-width: 802px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 700px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 700px; height: 400px;}   
 }
 @media screen and (max-width: 801px) and (min-width: 769px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 650px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 650px; height: 400px;}   
 }
 @media screen and (max-width: 768px) and (min-width: 704px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 600px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 600px; height: 400px;}   
 }
 @media screen and (max-width: 703px) and (min-width: 650px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 550px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 550px; height: 400px;}   
 }
 @media screen and (max-width: 649px) and (min-width: 568px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 450px;padding: 0px 50px 0px 50px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 450px; height: 400px;}   
 }
 @media screen and (max-width: 567px) and (min-width: 426px){
-    .projectheadText::after{left: 18%;width: 65%;}
     .projectContainer{margin-top: 50px;row-gap: 50px;}
     .description{width: 350px;padding: 0px 10px 0px 10px;}
     .textDescription{font-size: 1.5em;margin-top: 20px;}
     iframe{width: 350px; height: 400px;}   
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
-    .projectheadText::after{left: 20%;width: 60%;}
     .projectContainer{margin-top: 50px;row-gap: 30px;}
     .myProject{display: block;align-content: center;}
     .description{width: 330px;padding: 0;}
@@ -134,7 +115,6 @@ iframe{
     iframe{width: 330px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
-    .projectheadText::after{left: 20%;width: 60%;}
     .projectContainer{margin-top: 50px;row-gap: 30px;}
     .myProject{display: block;align-content: center;}
     .description{width: 280px;padding: 0;}
