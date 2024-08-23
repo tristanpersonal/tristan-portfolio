@@ -160,7 +160,7 @@ input, a{
 a:visited, a:active, a:focus{
     outline: none;
 }
-.footerBottom p{
+.bottomtext{
     margin: 0;
     padding: 10px 0px;
     color: #585858;
