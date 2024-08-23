@@ -3,7 +3,6 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/header&footer.css">
     <link rel="stylesheet" href="css/education.css">
@@ -11,62 +10,35 @@
     <link rel="stylesheet" href="css/services.css">
     <link rel="stylesheet" href="css/projects.css">
     <link rel="stylesheet" href="css/about.css">
-    <!--<link rel="stylesheet" href="css/animation.css"> -->
-    <title>My Portfolio</title>
+    <link rel="stylesheet" href="css/animation.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Portfolio</title>
 </head>
 <style>
     html{scroll-behavior: smooth;}
-    /* body{font-family: "Poppins", sans-serif;} */
-    section{scroll-margin-top: 75px;}
-    .myService{scroll-margin-top: 410px;}
-    .myProject:nth-child(1), .myProject:nth-child(2), .myProject:nth-child(3), .myProject:nth-child(5){scroll-margin-top: 480px;}
-    .myProject:nth-child(4){scroll-margin-top: 520px;}
+    body{font-family: "Poppins", sans-serif;}
+    section{scroll-margin-top: 70px;}
 </style>
 <body>
     <!-- Header -->
     <header>
-        <nav class="navbar fixed-top navbar-expand-sm">
-            <div class="container-fluid mynavSection pe-2">
-                <a class="navbar-brand" href="#"><img src="/img/tsenLogo.png" alt="" class="logo-icon"></a>
-                <button class="navbar-toggler burger-button" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
-                    <div class="offcanvas-header">
-                        <a class="offcanvas-title" id="offcanvasNavbarLabel" href="#"><img src="/img/logo.png" alt="" class="logo-icon"></a>
-                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-                    </div>
-                <!-- Tab Container -->
-                    <div class="offcanvas-body mynav">
-                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
-                            <!-- Home tab -->
-                            <li class="nav-item">
-                                <a class="nav-link active fw-bold" aria-current="page" href="#">Home</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active fw-bold" aria-current="page" href="#">Education</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link active fw-bold" aria-current="page" href="#">Skills</a>
-                            </li>
-                            <!-- Menu tab -->
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle fw-bold" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Projects</a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Calculator</a></li>
-                                    <li><a class="dropdown-item" href="#">Notes</a></li>
-                                    <li><a class="dropdown-item" href="#">Wireframe</a></li>
-                                    <li><a class="dropdown-item" href="#">3Treats</a></li>
-                                    <li><a class="dropdown-item" href="#">Thesis</a></li>
-                                </ul>
-                            </li>
-                            <!-- About -->
-                            <li class="nav-item">
-                                <a class="nav-link active btn btn-primary fw-bold d-sm-block d-none" aria-current="page" href="#">About me</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+        <nav id='myNav'>
+            <div class="logoSection">
+                <p><a href="#homeTab"><img src="img/tsenLogo.png" alt="logo-pic"></a></p>
+                <a href="https://drive.google.com/file/d/1msWPEf1zCssoCeTRgtzrE1y4plUuCnVS/view?usp=sharing" target="_blank"><button class="showBtn">View CV</button></a>
+            </div>
+            <div class="menuSection">
+                <input type='checkbox' id='responsiveMenu'>
+                <label for="responsiveMenu" class="burgerIcon"></label>
+                <ul>
+                    <li><a href='#homeTab' id="location">Home</a></li>
+                    <li><a href='#educTab' id="location">Education</a></li>
+                    <li><a href='#skillTab' id="location">Skills</a></li>
+                    <li><a href='#projectTab' id="location">Projects</a></li>
+                    <li><a href='#aboutTab' id="location"><Button class="aboutBtn">About me</Button></a></li>
+                </ul>
             </div>
           </nav>
     </header>
@@ -74,19 +46,19 @@
     <main>
         <!-- Home -->
         <section class="homeSection" id="homeTab">
-            <div class="container-fluid homecontent">
-                <div class="row">
-                    <div class="col text-xl-start text-center ps-xl-5 px-0">
-                        <h1 class="display-1 text-light fw-bolder mb-0 headtextOne">Hi, I am Tristan</h1>
-                        <h3 class="text-light display-5 fw-bold m-0 headtextTwo">Aspiring <span class="text-warning">Front-End Developer</span></h3>
-                        <p class="text-light headtextThree">Passionate about crafting and engaging website interfaces</p>
-                        <a href="#aboutTab" class="btn btn-outline-light d-xl-inline d-none">View CV</a>
-                    </div>
+            <div class="textContentContainer">
+                <div class="textContent">
+                    <h1>Hi, I am Tristan</h1>
+                    <h3>Aspiring <span>Front-End Developer</span></h3>
+                    <p>Passionate about crafting and engaging website interfaces</p>
+                    <a href="https://drive.google.com/file/d/1msWPEf1zCssoCeTRgtzrE1y4plUuCnVS/view?usp=sharing" target="_blank">
+                        <button class="readBtn">View CV</button>
+                    </a>
                 </div>
             </div>
             <img src="img/myPicture.png" alt="picture" class="myPic">
-            <div class="socmedContainer ps-3 pb-2 d-md-block d-none">
-                <p class="text-light mb-1">My social media</p> 
+            <div class="socmedContainer">
+                <p>My social media</p> 
                 <div class="socmedIcon">
                     <a href="https://www.facebook.com/t369s48e5n.001?mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt="picture"></a>
                     <a href="https://www.instagram.com/tristanstephennido?igsh=MXE0aXV6YTNzbjRpZg==" target="_blank"><img src="img/instagram.png" alt="picture"></a>
@@ -95,12 +67,12 @@
         </section>
         <!-- Education -->
         <section class="educationSection" id="educTab">
-            <h1 class="text-uppercase text-center fw-bolder">Educational Attainment</h1>
-            <p class="lead text-center text-dark px-sm-0 px-2 pt-2"><small>Here is an overview of my educational background, which forms the foundation of my qualifications.</small></p>
+            <h1 class="educHeadtext">Educational Attainment</h1>
+            <p class="educSubtext">Here is an overview of my educational background, which forms the foundation of my qualifications.</p>
             <div class="educationInfo">
                 <div class="educationContainer educationHidden">
-                    <p><img src="img/garpCap2.png" alt="cap-picture"></p>
-                    <h5 class="text-dark fw-bold level text-uppercase">Primary</h5>
+                    <p><img src="img/garpCap2.png" alt="gradCap"></p>
+                    <h3 class="level">Primary</h3>
                     <div class="information">
                         <p>Bangad Elementary School</p>
                         <p>Salutatorian</p>
@@ -108,8 +80,8 @@
                     </div>
                 </div>
                 <div class="educationContainer educationHidden">
-                    <p><img src="/img/garpCap2.png" alt="cap-picture"></p>
-                    <h5 class="text-dark fw-bold level text-uppercase">Junior High</h5>
+                    <p><img src="img/garpCap2.png" alt="gradCap"></p>
+                    <h3 class="level">Junior High</h3>
                     <div class="information">
                         <p>Janosa National High School</p>
                         <p>With Honors</p>
@@ -117,8 +89,8 @@
                     </div>
                 </div>
                 <div class="educationContainer educationHidden">
-                    <p><img src="/img/garpCap2.png" alt="cap-picture"></p>
-                    <h5 class="text-dark fw-bold level text-uppercase">Senior High</h5>
+                    <p><img src="img/garpCap2.png" alt="gradCap"></p>
+                    <h3 class="level">Senior High</h3>
                     <div class="information">
                         <p>Janosa National High School</p>
                         <p>With High Honors</p>
@@ -126,8 +98,8 @@
                     </div>
                 </div>
                 <div class="educationContainer educationHidden">
-                    <p><img src="/img/garpCap2.png" alt="cap-picture"></p>
-                    <h5 class="text-dark fw-bold level text-uppercase">Tertiary</h5>
+                    <p><img src="img/garpCap2.png" alt="gradCap"></p>
+                    <h3 class="level">Tertiary</h3>
                     <div class="information">
                         <p>University of Rizal System</p>
                         <p>Bachelor of Science in Computer Engineering</p>
@@ -138,95 +110,91 @@
         </section>
         <!-- Skills -->
         <section class="skillsSection" id="skillTab">
-            <h1 class="text-light text-center text-uppercase fw-bolder pb-4">My Skills</h1>
-            <div class="container">
-                <div class="row justify-content-center align-items-center">
-                    <div class="col col-lg-5 col-12">
-                        <div class="skillPic">
-                            <img src="img/ownpicture.jpg" alt="picture">
-                        </div>
-                    </div>
-                    <div class="col col-lg-5 d-lg-block d-flex justify-content-center">
-                        <div class="skillPercent">
-                            <li>
-                                <h6 class="text-light text-uppercase">html</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="html percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="text-light text-uppercase">css</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="css percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="text-light text-uppercase">javascript</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="javascript percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="text-light text-uppercase">wordpress</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="wordpress percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="text-light text-uppercase">figma</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="figma percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                            <li>
-                                <h6 class="text-light text-uppercase">python</h6>
-                                <div class="barContainer">
-                                    <span class="barsection">
-                                        <span class="python percentHidden"></span>
-                                    </span>
-                                </div>
-                            </li>
-                        </div>
+            <h1 class="skillHeadtext">My Skills</h1>
+            <div class="skillInformation">
+                <div class="skillPic">
+                    <img src="img/ownpicture.jpg" alt="picture">
+                </div>
+                <div class="skillBar">
+                    <div class="skillPercent">
+                        <li>
+                            <h3>html</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="html percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>css</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="css percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>javascript</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="javascript percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>wordpress</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="wordpress percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>figma</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="figma percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
+                        <li>
+                            <h3>python</h3>
+                            <div class="barContainer">
+                                <span class="bar">
+                                    <span class="python percentHidden"></span>
+                                </span>
+                            </div>
+                        </li>
                     </div>
                 </div>
             </div>
         </section>
         <!-- Services -->
         <section class="serviceSection">
-            <h1 class="text-dark text-uppercase text-center fw-bolder">What I can do</h1>
+            <h1 class="skillHeadtext2">What I can do</h1>
             <div class="serviceContainer">
                 <div class="myService serviceHidden">
-                    <div class="text-center top-section">
+                    <div class="skillDivOne">
                         <img src="img/wedesign.png" alt="Web design picture" class="skillIcon">
-                        <h4 class="text-dark my-2">Web Design</h4>
+                        <h1>Web Design</h1>
                     </div>
                     <div class="skillDivTwo">
                         <p class="skillInfo">I design websites using HTML, CSS, and JavaScript, and I use Figma for wireframing to visualize the final design. My skills include adding interactive elements to enhance user engagement. I am willing to adapt to the latest web design trends and technologies to create modern and efficient websites. My goal is excellence.</p>
                     </div>
                 </div>
                 <div class="myService serviceHidden">
-                    <div class="text-center top-section">
+                    <div class="skillDivOne">
                         <img src="img/responsive.png" alt="Responsive web picture" class="skillIcon">
-                        <h4  class="text-dark my-2">Responsive Website</h4>
+                        <h1>Responsive Website</h1>
                     </div>
                     <div class="skillDivTwo">
                         <p class="skillInfo">I have experience creating responsive and user-friendly web interfaces using CSS, ensuring compatibility across devices. This involves implementing media queries, flexible grids, and techniques to optimize layout. I am dedicated to delivering websites that provide seamless navigation and accessibility for users.</p>
                     </div>
                 </div>
                 <div class="myService serviceHidden">
-                    <div class="text-center top-section">
+                    <div class="skillDivOne">
                         <img src="img/frontend.png" alt="Front-end picture" class="skillIcon">
-                        <h4  class="text-dark my-2">Front-End coding</h4>
+                        <h1>Front-End coding</h1>
                     </div>
                     <div class="skillDivTwo">
                         <p class="skillInfo">I am dedicated to converting website designs into code, putting in my best effort to ensure the visual design is accurately translated into functional and interactive web pages. I continually strive to improve my coding skills and stay updated with industry standards to deliver high-quality results.</p>
@@ -236,7 +204,7 @@
         </section>
         <!-- Projects -->
         <section class="projectSection" id="projectTab">
-            <h1 class="text-center text-light fw-bolder text-uppercase">My Works</h1>
+            <h1 class="projectheadText">My Works</h1>
             <div class="projectContainer">
                 <div class="myProject figureHidden">
                     <div class="youtubeContainer">
@@ -272,7 +240,7 @@
         </section>
         <!-- About Me -->
         <section class="aboutSection" id="aboutTab">
-            <h1 class="showText">About Me</h1>
+            <h1 class="show">About Me</h1>
             <div class="aboutContainer">
                 <div class="aboutInformation">
                     <div class="aboutContent">
@@ -300,28 +268,34 @@
         </section>
     </main>
     <!-- Footer -->
-    <footer class="container-fluid footerContainer">
-        <div class="container">
-            <div class="row justify-content-center align-items-center">
-                <div class="col-sm-6 col-12 text-sm-start text-center mt-5">
-                    <img src="img/tsenLogo.png" alt="picture" class="logo-icon mb-2 text-start">
-                    <p class="text-light footercontent mb-1">My portfolio is  a collection of my work designed to highlight my skills and abilities. its main objective is to showcase my talents to potential employers or clients</p>
-                    <img src="/img/facebook.png" alt="" class="socmed-icon d-md-none d-inline">
-                    <img src="/img/instagram.png" alt="" class="socmed-icon mx-1 d-md-none d-inline">
-                    <a href="#" class="btn btn-outline-light d-xl-none d-inline">View CV</a>
+    <footer> 
+        <div class="footerContainer">
+            <!-- Footer 1 -->
+            <div class="footerSection">
+                <div class="rightContent">
+                    <img src="img/tsenLogo.png" alt="picture" class="footer-logo">
+                    <p>My portfolio is  a collection of my work designed to highlight my skills and abilities. its main objective is to showcase my talents to potential employers or clients</p>
+                    <div class="footersocmed">
+                        <a href="https://www.facebook.com/t369s48e5n.001?mibextid=ZbWKwL" target="_blank"><img src="img/facebook.png" alt="" class="footersocmed-icon"></a>
+                        <a href="https://www.instagram.com/tristanstephennido?igsh=MXE0aXV6YTNzbjRpZg==" target="_blank"><img src="img/instagram.png" alt="" class="footersocmed-icon"></a>
+                    </div>
                 </div>
-                <div class="col-sm-6 col-12 text-sm-end text-center mt-5">
-                    <h4 class="text-light text-uppercase">Contact me</h4>
-                    <p class="mb-0 text-light">nidotristanstephen@gmail.com</p>
-                    <p class="text-light">+63 938 862 7355</p>
-                </div>
-                <div class="col-12 mt-5 text-center">
-                    <p class="lead text-center"><small class="text-secondary fw-bold">Designed by Tristan</small></p>
+            </div>
+            <!-- Footer 3 -->
+            <div class="footerSection">
+                <div class="leftContent">
+                    <div class="contentLeft">
+                        <h2>Contact Me</h2>
+                        <div class="contactInformation">
+                            <li>nidotristanstephen@gmail.com</li>
+                            <li>0938 862 7355</li>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
+        <li class="bottomtext">Designed by Tristan</li>
     </footer>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
      <script src="js/controlandscroll.js"></script>
 </body>
 </html>
