@@ -95,6 +95,14 @@ h3{
     0%{width: 0%;}
     100%{width: 45%;}
 }
+.bootstrap{
+    width:45%;
+    animation: bootstrap 3s;
+}
+@keyframes bootstrap{
+    0%{width: 0%;}
+    100%{width: 45%;}
+}
 .wordpress{
     width:25%;
     animation: wordpress 3s;
@@ -104,12 +112,12 @@ h3{
     100%{width: 25%;}
 }
 .figma{
-    width:45%;
+    width:50%;
     animation: figma 3s;
 }
 @keyframes figma{
     0%{width: 0%;}
-    100%{width: 45%;}
+    100%{width: 50%;}
 }
 .python{
     width:35%;
