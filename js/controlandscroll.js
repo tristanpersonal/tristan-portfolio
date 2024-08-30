@@ -15,7 +15,7 @@ const createObserver = (hiddenClass, showClass) => {
 }
 
 createObserver('educationHidden', 'educationShow');
-createObserver('percentHidden', 'percentShow');
+createObserver('skillHidden', 'skillShow');
 createObserver('serviceHidden', 'serviceShow');
 createObserver('rightHidden', 'rightShow');
 createObserver('figureHidden', 'figureShow');
