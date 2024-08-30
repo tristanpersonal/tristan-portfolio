@@ -7,14 +7,14 @@
     opacity: 1;
     transform: translateX(0%);
 }
-.percentHidden{
+.skillHidden{
     opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.5s;
+    transform: translateY(50%);
+    transition: all 0.8s;
 }
-.percentShow{
+.skillShow{
     opacity: 1;
-    transform: translateX(0%);
+    transform: translateY(0%);
 }
 .serviceHidden{
     opacity: 0;
