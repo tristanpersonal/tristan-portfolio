@@ -35,14 +35,17 @@
     padding: 0px 20px;
 }
 .aboutText{
-    color: #06070A;
-    padding: 0;
-    margin: 0;
+    background-color: #0A58CA;
+    color: #FFF;
+    padding: 5px 10px;
+    border-radius: 5px;
+    width: 250px;
 }
 .aboutInfo{
     width: 600px;
     text-align: justify;
     vertical-align: middle;
+    font-size: 0.9rem;
 }
 @media screen and (max-width: 1159px) and (min-width: 890px){
     .aboutPicture{width:300px;}
@@ -50,29 +53,17 @@
 }
 @media screen and (max-width: 889px){
     .aboutContent{row-gap: 20px;}
-    .aboutText{text-align: center;}
     .aboutPicture{width: 300px;}
-}
-@media screen and (max-width: 889px) and (min-width: 769px){
-    .topaboutContent{margin: 0px 50px;}
 }
 @media screen and (max-width: 768px) and (min-width: 544px){
     .aboutInfo{width: 500px;}
-    .topaboutContent{margin: 0px 40px;}
-    .topaboutContent p{font-size: 0.9em;}
 }
 @media screen and (max-width: 545px) and (min-width: 426px){
     .aboutInfo{width: 380px;}
-    .topaboutContent{margin: 0px 40px;}
-    .topaboutContent p{font-size: 0.9em;}
 }
 @media screen and (max-width: 425px) and (min-width: 376px){
     .aboutInfo{width: 320px;}
-    .topaboutContent{margin: 0px 30px;}
-    .topaboutContent p{font-size: 0.9em;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
     .aboutInfo{width: 275px;}
-    .topaboutContent{margin: 0px 30px;}
-    .topaboutContent p{font-size: 0.9em;}
 }
