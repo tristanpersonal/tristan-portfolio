@@ -32,32 +32,27 @@
 }
 .educationContainer h3{
     text-transform: uppercase;
-    color: #06070A;
-}
-.educationContainer img{
-    padding: 20px;
-    width: 50px;
-    border-radius: 50%;
-    background-color: #FCD70D;
+    color: #FFF;
+    background-color: #0A58CA;
+    padding: 10px 15px;
+    border-radius: 5px;
 }
 .information p{
     color: #06070A;
     text-align: center;
+    font-size: 0.9rem;
 }
 .educationContainer:hover{
-    background-color: #8b8b8b;
-    color: #FFFFFF;
+    background-color: #b1b1b1;
+    color: #FFF;
     border: none;
     transform: scale(1.05);
 }
-.educationContainer:hover img{
-    background-color: #FFFFFF;
+.educationContainer:hover h3{
+    background-color: #FFF;
 }
-.educationContainer:hover .information p{
-    color: #FFFFFF;
-}
-.educationContainer:hover .level{
-    color: #FFFFFF;
+.educationContainer:hover h3{
+    color: #000;
 }
 @media screen and (max-width: 1159px) and (min-width: 870px){
     .educationInfo{column-gap: 150px;}
