@@ -26,6 +26,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
 }
 .aboutPicture{
     width: 300px;
