@@ -75,6 +75,7 @@ iframe{
 @media screen and (max-width: 425px) and (min-width: 376px){
     .projectContainer{margin-top: 50px;row-gap: 30px;}
     .myProject{display: block;align-content: center;}
+    .projectheadText{font-size: 1.7rem;}
     iframe{width: 330px;}
 }
 @media screen and (max-width: 375px) and (min-width: 320px){
