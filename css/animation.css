@@ -1,36 +1,9 @@
-.educationHidden{
-    opacity: 0;
-    transform: translateX(-100%);
-    transition: all 0.5s;
-}
-.educationShow{
-    opacity: 1;
-    transform: translateX(0%);
-}
-.skillHidden{
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.8s;
-}
-.skillShow{
-    opacity: 1;
-    transform: translateY(0%);
-}
 .serviceHidden{
     opacity: 0;
     transform: translateY(50%);
     transition: all 0.5s;
 }
 .serviceShow{
-    opacity: 1;
-    transform: translateY(0%);
-}
-.rightHidden{
-    opacity: 0;
-    transform: translateY(50%);
-    transition: all 0.5s;
-}
-.rightShow{
     opacity: 1;
     transform: translateY(0%);
 }
