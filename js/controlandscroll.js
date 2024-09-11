@@ -13,10 +13,6 @@ const createObserver = (hiddenClass, showClass) => {
     const hiddenElements = document.querySelectorAll(`.${hiddenClass}`);
     hiddenElements.forEach((el) => observer.observe(el));
 }
-
-createObserver('educationHidden', 'educationShow');
-createObserver('skillHidden', 'skillShow');
 createObserver('serviceHidden', 'serviceShow');
-createObserver('rightHidden', 'rightShow');
 createObserver('figureHidden', 'figureShow');
 
