@@ -60,7 +60,9 @@ h3 span{
 .socmedIcon .aboutIcon{
     display: none;
 }
-
+.readBtn, .aboutBtn{
+    cursor: pointer;
+}
 @media screen and (max-width: 1189px){
     .readBtn{display: none;}
     .textContent{margin-left: 0px;text-align: center;}
